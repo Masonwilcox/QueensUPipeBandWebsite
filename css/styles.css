@@ -1,0 +1,511 @@
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --red: #FF0000;
+  --green: #00FF00;
+  --blue: #0000FF;
+  --navy: #000080;
+  --gray: #808080;
+  --yellow: #FFFF00;
+  --orange: #FFA500;
+  --purple: #800080;
+  --DarkNavy: #0B0B45;
+  --main-color: red;
+  --second-color: blue;
+  --third-color: yellow;
+  --black: #000000;
+  --white: #FFFFFF;
+  --main-color: #ff0000;
+  /* red */
+  --second-color: #0000ff;
+  /* blue */
+  --third-color: #ffff00;
+  /* yellow */
+  --dark-mode-color: #333333;
+  /* dark gray */
+  --light-mode-color: #f5f5f5;
+  /* light gray */
+  --QueensBlue: #002452;
+  --QueensRed: #b90e31;
+  --QueensYellow: #fabd0f;
+}
+
+
+body {
+  background-color: var(--light-mode-color);
+  color: var(--black);
+}
+
+p {
+  color: var(--black);
+}
+
+p.indent {
+  text-indent: 30px;
+}
+
+h1 {
+  color: var(--black);
+}
+
+h2{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: var(--black);
+font-size: 1.3rem;
+}
+
+label{
+  color: var(--black);
+  font-size: large;
+}
+
+h5{
+  font-size: 3rem;
+}
+
+span{
+  color: var(--QueensRed);
+}
+
+.sa-Qred{
+  color: var(--QueensRed);
+}
+.sa-Qblue{
+  color: var(--QueensBlue);
+}
+.sa-Qyellow{
+  color: var(--QueensYellow);
+}
+
+/* Nav section */
+.navbar-social-icon {
+  z-index: 4;
+}
+/* Make the second navbar fixed to the top */
+.justify-content-end.navbar-fixed-top {
+  background-color: #808080;
+position: fixed;
+top: 10px;
+z-index: 5;
+}
+
+.small-nav-text {
+  color: #000080;
+}
+
+.large-nav-text {
+  color: black;
+}
+
+
+.navbar-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.navbar-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.navbar-social-icon i {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.navbar-social-icon span {
+  font-size: calc(10px + (18 - 20) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: calc(20px + (10 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.navbar-social-icon a {
+  font-size: calc(14px + (14 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.navbar-social-icon i {
+  height: calc(25px + (36 - 40) * ((100vw - 300px) / (1600 - 300)));
+  width: calc(25px + (36 - 40) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(28px + (34 - 38) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+
+/* Add padding to the content below the fixed navbar */
+body {
+  padding-top: 0px;
+  /* adjust as needed */
+
+}
+
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  z-index: 20;
+}
+
+.nav-link .large-nav-text:hover {
+  border: 5px solid #333333;
+  overflow: hidden;        
+}
+
+.nav-item.dropdown .nav-link:hover {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+/* Hide the navigation menu when the screen size is smaller */
+@media screen and (max-width:768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+/* Show the navigation menu when the screen size is larger */
+@media screen and (min-width:768px) {
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+
+/* End Nav section */
+
+/* Home section */
+
+
+/* Image Slider section */
+
+.carousel-item {
+  margin-top: 120px;
+  height: 88vh; /* Set height of the carousel item to 80% of the viewport height */
+  min-height: 300px; /* Set minimum height of the carousel item to 300px */
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; /* Set the position property to relative to position the text inside the carousel item */
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%; /* Vertically center the text using top and translate properties */
+  left: 50%; /* Horizontally center the text using left and translate properties */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Set the z-index property to 1 to position the text above the image */
+}
+
+.carousel-item img {
+  position: absolute; /* Set the position property to absolute to position the image inside the carousel item */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Use the object-fit property to resize the image to fit the container */
+}
+
+
+
+/* End Image Slider section */
+
+
+/* Home Info section */
+
+.image-box1 img,
+.image-box2 img,
+.image-box3 img {
+  height: 100%; /* Set the height property of the image to 100% to resize it to fit the container */
+  width: 100%; /* Set the width property of the image to 100% to resize it to fit the container */
+  object-fit: cover; /* Use the object-fit property to resize the image to fit the container */
+}
+
+.carousle-text{
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+/* End Home Info section */
+
+
+/* End Home section */
+
+
+
+
+@media (max-width: 768px) {
+  .Sinuprow {
+    flex-direction: column;
+  }
+  .text {
+    order: 2;
+  }
+  .Sinupimage {
+    order: 1;
+  }
+}
+
+
+.Sinuprow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Sinupitem {
+  flex: 1;
+  position: relative;
+  width: 40vw;
+  height: 70vh;
+  margin: 10px;
+  overflow: hidden;
+}
+.Sinupitem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.Sinupitem .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+.Sinupitem:hover .text {
+  transform: translateY(0%);
+}
+.Sinupitem a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.image1{
+  top: 50%;
+}
+
+
+/* Footer */
+.form-group{
+  padding-right: 10px;
+}
+
+.page-footer{
+margin-top: 100vh;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: sticky;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 5px;
+}
+.footer-logo img {
+  max-width: 80px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.instagram-bg{
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  font-size: larger;
+  }
+
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #ff5e14;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+
+
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+  margin-top: -40vh;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+
+/* End Footer */

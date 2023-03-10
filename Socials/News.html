@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Robbie Burns Day</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/Socials.css">
+  <title>Simple Map</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type="module" src="/scripts/app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <script src="/scripts/timer.js"></script>
+</head>
+
+<body>
+
+  <section>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top w-100 d-flex justify-content-end align-items-center navbar-social-icon"
+        style="z-index: 6;">
+        <a href="https://www.instagram.com/queensupipeband/" target="_blank"> <i
+                class="fab fa-instagram instagram-bg mr-3"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100089124356288" target="_blank"><i
+                class="fab fa-facebook-f facebook-bg mr-3"></i></a>
+        <a href="https://twitter.com/QueensUPipeBand" target="_blank"><i
+                class="fab fa-twitter twitter-bg mr-3"></i></a>
+        <a href="https://www.youtube.com/channel/UCJtpFiTcjzArntWTFaglrNg" target="_blank"><i
+                class="fab fa-youtube google-bg mr-3"></i></a>
+    </nav>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+        style="z-index: 5; top: 36px; font-size: 150%;">
+        <a class="logo" href="/index.html">
+            <img src="/img/logo.jpg" alt="logo" class="img-fluid" style="width:80px; height:auto;">
+        </a>
+        <ul class="navbar-nav mx-2">
+            <li class="nav-item dropdown">
+                <a class="nav-link large-nav-text" href="/QueensBand/Login.html">Login</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav mx-auto justify-content-space-evenly">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Courses/SingupPage.html">
+                        Courses
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Courses/CSpecialNeeds.html">Special Needs Leason</a>
+                        <a class="dropdown-item" href="/Courses/Cbagpipe.html">Bagpiping Leasons</a>
+                        <a class="dropdown-item" href="/Courses/Ctenor.html">Tenor & Bass Leasons</a>
+                        <a class="dropdown-item" href="/Courses/CSnare.html">Snare Drumming Leasons</a>
+                        <a class="dropdown-item" href="/Courses/Chighland.html">Highland Dancing Leasons</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Socials/HireBand.html">
+                        Community
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Socials/News.html">News</a>
+                        <a class="dropdown-item" href="/Socials/Media.html">Media</a>
+                        <a class="dropdown-item" href="/Socials/HireBand.html">Hire the Band</a>
+                        <a class="dropdown-item" href="/Socials/Fundraisers.html">Fundraisers</a>
+                        <a class="dropdown-item" href="/Socials/Donations.html">Donations</a>
+                        <a class="dropdown-item" href="/Socials/FAQs.html">FAQ's</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/History/History.html">
+                        Our Story
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/History/History.html">History</a>
+                        <a class="dropdown-item" href="/History/OurMission.html">Our Mission</a>
+                        <a class="dropdown-item" href="/History/Award.html">Awards</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Events/AllEvents.html">
+                        Events
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Events/AllEvents.html">All Events</a>
+                        <a class="dropdown-item" href="/Events/RobbieBurns.html">Robbie Burns</a>
+                        <a class="dropdown-item" href="/Events/SaintPattys.html">Saint Patty's </a>
+                        <a class="dropdown-item" href="/Events/Remembranceday.html">Remembrance Day</a>
+                        <a class="dropdown-item" href="/Events/SantaParade.html">Santa Parades</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Members/Staff.html">
+                        Members
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Members/Staff.html">All Staff</a>
+                        <a class="dropdown-item" href="/Members/Staff.html">Board Members</a>
+                        <a class="dropdown-item" href="/Members/Instructor.html">Instructor</a>
+                        <a class="dropdown-item" href="/Members/QUPBMembers.html">QUPB Members</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Shop/Shop.html">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/QueensBand/Queens.html">Queens</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mx-2">
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Courses/SingupPage.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</section>
+
+
+
+<section class="blog_section" style="margin-top: 110px;">
+  <div class="container">
+    <div class="blog_content">
+      <div class="owl-carousel owl-theme">
+        <div class="blog_item">
+          <div class="blog_image">
+            <img class="img-fluid" src="/img/PIPER_RAIN_Blog.jpg" alt="images not found">
+            <span><a href=""></a><i class="icon ion-md-create"></i></span>
+          </div>
+
+          <div class="blog_details">
+            <div class="blog_title">
+              <h5><a href="#">Moisture Control</a></h5>
+            </div>
+            <ul>
+              <li><i class="icon ion-md-person"></i>Mason Wilcox</li>
+              <li><i class="icon ion-md-calendar"></i>Feb 14 2023</li>
+            </ul>
+
+            <p>
+              Bagpipes are a unique and beautiful instrument, but they require special care to ensure they are in good
+              working condition. One of the most important aspects of bagpipe maintenance is moisture control.
+
+              Moisture can cause a variety of problems for bagpipes, including warping and cracking of the wood, mold
+              and mildew growth, and rusting of metal parts. To prevent these issues, it is important to keep the
+              moisture levels in the bag and in the pipes at a consistent and appropriate level.
+
+              One way to control moisture in the bag is to use a moisture control system, such as a moisture control
+              bag or a moisture control system that attaches to the blowpipe. These systems absorb excess moisture and
+              release it slowly, keeping the moisture levels in the bag at a consistent level.
+
+              Another way to control moisture in the pipes is to regularly dry out the pipes after playing. This can
+              be done by removing the reeds and blowing air through the pipes, or by using pipe drying rods. It is
+              also important to store the pipes in a dry place when not in use, such as a hard case or pipe bag.
+
+              In addition to these preventative measures, it is also important to inspect the pipes and the bag
+              regularly for signs of moisture damage, such as warping, cracking, or mold and mildew growth. If any of
+              these issues are found, it is important to address them as soon as possible to prevent further damage.
+
+              Overall, moisture control is an important aspect of maintaining the longevity of your bagpipes. By using
+              moisture control systems, drying out the pipes after playing, and storing the pipes in a dry place, you
+              can help keep your bagpipes in good working condition for years to come.
+            </p>
+
+            <a href="#" class="read-more">Read More<i class="icofont-long-arrow-right"></i></a>
+          </div>
+        </div>
+        
+          <div class="blog_item">
+            <div class="blog_image">
+              <img class="img-fluid" src="/img/Outreach_Blog.jpg" alt="images not found">
+              <span><i class="icon ion-md-create"></i></span>
+            </div>
+            <div class="blog_details">
+              <div class="blog_title">
+                <h5><a href="#">A Mothers Argument for the Benifits of Music for Children with Special Needs</a></h5>
+              </div>
+              <ul>
+                <li><i class="icon ion-md-person"></i>Thea Wilcox</li>
+                <li><i class="icon ion-md-calendar"></i>Febuary 14, 2023</li>
+              </ul>
+              <p>
+                As the mother of a child with special needs, I have seen firsthand the struggles that come with
+                finding a sense of community and belonging for our children. It can be challenging to find activities
+                and groups that cater to their specific needs, and even more challenging to find those that encourage
+                them to express themselves and find joy in their abilities. That's why I believe that being a part of
+                a band, especially a pipe band, can be an incredibly valuable experience for children with special
+                needs.
+
+                Playing an instrument and being part of a band is not only a fun activity, but it can also have many
+                positive effects on a child's mental and emotional well-being. It can provide a sense of structure and
+                routine, which is especially important for children with special needs who may struggle with
+                transitions and changes. Being a part of a band can also help build confidence and self-esteem, as
+                children learn new skills and take on new challenges.
+
+                One of the things I love about pipe bands is that they offer a strong sense of community and
+                camaraderie. In a pipe band, children can work together with others to create something beautiful, and
+                they can experience the joy of making music as a team. This sense of belonging is especially important
+                for children with special needs, who may feel isolated or excluded in other social situations. Being
+                part of a band can offer a sense of acceptance and inclusion that is hard to find elsewhere.
+
+                In addition to the emotional and social benefits, being part of a pipe band can also offer many
+                practical advantages for children with special needs. For example, learning to play an instrument can
+                improve fine motor skills, hand-eye coordination, and focus. These skills can translate to other areas
+                of their lives, helping them to succeed in school and other activities.
+
+                Overall, I believe that being a part of a band, and specifically a pipe band, can be an incredibly
+                positive and rewarding experience for children with special needs. It can offer a sense of community,
+                belonging, and joy, and can help build important skills and confidence that will benefit them
+                throughout their lives. I encourage all parents of children with special needs to consider the many
+                benefits of being part of a band, and to explore the opportunities that exist in their local
+                communities. By doing so, they can help their children to thrive and grow in new and exciting ways.
+              </p>
+              <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
+            </div>
+          </div>
+
+
+          <div class="blog_item">
+            <div class="blog_image">
+              <img class="img-fluid" src="/img/Snare_Drum_Blog.jpg" alt="images not found">
+              <span><i class="icon ion-md-create"></i></span>
+            </div>
+            <div class="blog_details">
+              <div class="blog_title">
+                <h5><a href="#">Snare Drum Maintenance</a></h5>
+              </div>
+              <ul>
+                <li><i class="icon ion-md-person"></i>Mason Wilcox</li>
+                <li><i class="icon ion-md-calendar"></i>Febuary 14, 2023</li>
+              </ul>
+              <h3>
+                Snare Drum Maintenance
+              </h3>
+              <p>Snare drums are essential components of a drum kit, and they require proper maintenance to ensure
+                their
+                longevity and performance. A well-maintained snare drum can produce a clean and crisp sound that
+                enhances the overall quality of a drum kit. Here are some tips for snare drum maintenance that can
+                help
+                you keep your instrument in top condition.
+
+                Keep the Snare Drum Clean
+                Cleaning your snare drum is essential to keep it in good condition. Dirt, dust, and other debris can
+                accumulate on the drum's surface and inside its shell. To clean the snare drum, you can use a soft
+                cloth
+                or a microfiber towel and a mild cleaner. Avoid using harsh chemicals or abrasive materials that can
+                damage the drum's finish.
+
+                Tune the Snare Drum
+                Tuning your snare drum is critical to getting the right sound from it. You can use a drum key to
+                adjust
+                the tension of the drum's head to achieve the desired pitch. Be sure to tune both the top and bottom
+                heads of the drum to ensure that they are in harmony with each other.
+
+                Replace the Snare Wires
+                Snare wires are the metal strands that run across the bottom head of the snare drum. Over time, these
+                wires can become damaged or worn out, affecting the sound quality of the drum. Replace the snare wires
+                when you notice that they are damaged, or if they have lost their sensitivity.
+
+                Adjust the Snare Strainer
+                The snare strainer is the mechanism that engages or disengages the snare wires. If the snare strainer
+                is
+                too tight, the snare wires will be too sensitive, and the drum will produce a buzz. If the snare
+                strainer is too loose, the snare wires will not engage, and the drum will produce a dull sound. Adjust
+                the snare strainer to achieve the right balance between sensitivity and tonality.
+
+                Store the Snare Drum Properly
+                When not in use, store your snare drum in a dry, cool place. Avoid exposing the drum to direct
+                sunlight,
+                extreme heat, or humidity, as these conditions can damage the drum's finish and hardware. You can
+                store
+                the snare drum in a case or a bag to protect it from dust and scratches.
+
+                In conclusion, snare drum maintenance is essential to ensure the longevity and performance of your
+                instrument. With regular cleaning, tuning, and proper storage, you can keep your snare drum in top
+                condition, producing the sound quality that you desire. Remember to replace worn-out parts and make
+                necessary adjustments to keep the snare drum functioning at its best.
+              </p>
+
+
+              <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="blog_item">
+            <div class="blog_image">
+              <img class="img-fluid" src="/img/Highland_Dance_Blog.webp" alt="images not found">
+              <span><i class="icon ion-md-create"></i></span>
+            </div>
+            <div class="blog_details">
+              <div class="blog_title">
+                <h5><a href="#">The Art of Highland Dancing</a></h5>
+              </div>
+              <ul>
+                <li><i class="icon ion-md-person"></i>Mason Wilcox</li>
+                <li><i class="icon ion-md-calendar"></i>Febuary 14, 2023</li>
+              </ul>
+              <p>Highland dancing is a traditional Scottish dance that has been passed down through generations. The
+                dance is known for its intricate footwork, agility, and the use of the whole body to express emotion.
+                Highland dancing is often performed at Scottish festivals, weddings, and other cultural events.
+                Highland
+                dance competitions are also popular, bringing together dancers from all over the world to showcase
+                their
+                skills.
+
+                Highland dance competitions are judged events that follow a set of rules and guidelines. Competitions
+                can be held at the local, national, or international level, with participants grouped by age and skill
+                level. Each competition usually features a series of dances that are performed in front of a panel of
+                judges.
+
+                Before the competition begins, dancers prepare themselves mentally and physically. They warm up their
+                muscles, stretch, and practice their steps to ensure they are ready to perform at their best. They
+                also
+                dress in traditional Highland dance attire, which includes a kilt, blouse, vest, and knee-high socks
+                with garters.
+
+                The competition itself is divided into rounds, with each round featuring a different dance. The dances
+                can range from traditional Highland dances, such as the Sword Dance and the Highland Fling, to more
+                modern choreographed routines. The dancers are judged on their technique, execution, and overall
+                performance.
+
+                In addition to the judges, the audience is also an important part of the competition. They offer
+                support
+                and encouragement to the dancers, cheering them on and providing a lively atmosphere. The music is
+                also
+                an important part of the competition, with live bands playing traditional Scottish tunes that inspire
+                and energize the dancers.
+
+                At the end of the competition, the judges announce the winners and award prizes to the top performers.
+                These prizes can include medals, trophies, and cash prizes, depending on the competition and the level
+                of skill of the dancers.
+
+                Highland dancing competitions are more than just a display of skill and technique. They are an
+                opportunity for dancers to showcase their passion for the dance, connect with other dancers, and
+                celebrate their Scottish heritage. For many dancers, Highland dancing is not just a hobby, but a way
+                of
+                life, and competitions are a chance to share that passion with others.
+
+                In conclusion, Highland dance competitions are an exciting and important part of the Scottish dance
+                tradition. They bring together dancers from all over the world, allowing them to showcase their
+                skills,
+                connect with other dancers, and celebrate their Scottish heritage. If you have the chance to attend a
+                Highland dance competition, you will witness not just a display of dance, but a celebration of
+                culture,
+                community, and passion.</p>
+              <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!-- carousel -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</body>
+
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22871.398632347253!2d-76.49426900000002!3d44.229206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd1e493a7fc07ef1!2sQueen&#39;s%20Athletics%20%26%20Recreation%20Centre%20(ARC)!5e0!3m2!1sen!2sca!4v1676143544552!5m2!1sen!2sca"
+  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>Queen's Athletics & Recreation Centre (ARC)<br>
+                284 Earl St, Kingston, ON K7L 3N6</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>(613) 533-2500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>queensupipeband@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="/index.html"><img src="/img/logo.jpg" class="img-fluid" alt="logo"></a>
+            </div>
+            <div class="footer-text">
+              <p>We are exited to be here for your scottish journey of learning about its history and taking up its
+                traditional instruments.</p>
+            </div>
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="https://www.instagram.com/queensupipeband/"> <i class="fab fa-instagram instagram-bg"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100089124356288"><i
+                  class="fab fa-facebook-f facebook-bg"></i></a>
+              <a href="https://twitter.com/QueensUPipeBand"><i class="fab fa-twitter twitter-bg"></i></a>
+              <a href="https://www.youtube.com/channel/UCJtpFiTcjzArntWTFaglrNg"><i
+                  class="fab fa-youtube google-bg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/Events/AllEvents.html">Events</a></li>
+              <li><a href="/Courses/SingupPage.html">Sign Up</a></li>
+              <li><a href="/Members/Staff.html">Team</a></li>
+              <li><a href="/History/OurMission.html">Our Mission</a></li>
+              <li><a href="/Shop/Shop.html">Shop</a></li>
+              <li><a href="/History/History.html">History</a></li>
+              <li><a href="/Socials/Fundraisers.html">Fundrasing</a></li>
+              <li><a href="/Socials/FAQs.html">FAQs</a></li>
+              <li><a href="/Socials/News.html">Latest News</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Subscribe</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="text" placeholder="Email Address">
+                <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/"></a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

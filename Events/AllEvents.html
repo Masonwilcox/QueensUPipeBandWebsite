@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>All Evvents</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/Events.css">
+  <title>Simple Map</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type="module" src="/scripts/app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <script src="/scripts/timer.js"></script>
+</head>
+
+<body>
+
+  <section>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top w-100 d-flex justify-content-end align-items-center navbar-social-icon"
+        style="z-index: 6;">
+        <a href="https://www.instagram.com/queensupipeband/" target="_blank"> <i
+                class="fab fa-instagram instagram-bg mr-3"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100089124356288" target="_blank"><i
+                class="fab fa-facebook-f facebook-bg mr-3"></i></a>
+        <a href="https://twitter.com/QueensUPipeBand" target="_blank"><i
+                class="fab fa-twitter twitter-bg mr-3"></i></a>
+        <a href="https://www.youtube.com/channel/UCJtpFiTcjzArntWTFaglrNg" target="_blank"><i
+                class="fab fa-youtube google-bg mr-3"></i></a>
+    </nav>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+        style="z-index: 5; top: 36px; font-size: 150%;">
+        <a class="logo" href="/index.html">
+            <img src="/img/logo.jpg" alt="logo" class="img-fluid" style="width:80px; height:auto;">
+        </a>
+        <ul class="navbar-nav mx-2">
+            <li class="nav-item dropdown">
+                <a class="nav-link large-nav-text" href="/QueensBand/Login.html">Login</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav mx-auto justify-content-space-evenly">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Courses/SingupPage.html">
+                        Courses
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Courses/CSpecialNeeds.html">Special Needs Leason</a>
+                        <a class="dropdown-item" href="/Courses/Cbagpipe.html">Bagpiping Leasons</a>
+                        <a class="dropdown-item" href="/Courses/Ctenor.html">Tenor & Bass Leasons</a>
+                        <a class="dropdown-item" href="/Courses/CSnare.html">Snare Drumming Leasons</a>
+                        <a class="dropdown-item" href="/Courses/Chighland.html">Highland Dancing Leasons</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Socials/HireBand.html">
+                        Community
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Socials/News.html">News</a>
+                        <a class="dropdown-item" href="/Socials/Media.html">Media</a>
+                        <a class="dropdown-item" href="/Socials/HireBand.html">Hire the Band</a>
+                        <a class="dropdown-item" href="/Socials/Fundraisers.html">Fundraisers</a>
+                        <a class="dropdown-item" href="/Socials/Donations.html">Donations</a>
+                        <a class="dropdown-item" href="/Socials/FAQs.html">FAQ's</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/History/History.html">
+                        Our Story
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/History/History.html">History</a>
+                        <a class="dropdown-item" href="/History/OurMission.html">Our Mission</a>
+                        <a class="dropdown-item" href="/History/Award.html">Awards</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Events/AllEvents.html">
+                        Events
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Events/AllEvents.html">All Events</a>
+                        <a class="dropdown-item" href="/Events/RobbieBurns.html">Robbie Burns</a>
+                        <a class="dropdown-item" href="/Events/SaintPattys.html">Saint Patty's </a>
+                        <a class="dropdown-item" href="/Events/Remembranceday.html">Remembrance Day</a>
+                        <a class="dropdown-item" href="/Events/SantaParade.html">Santa Parades</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Members/Staff.html">
+                        Members
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Members/Staff.html">All Staff</a>
+                        <a class="dropdown-item" href="/Members/Staff.html">Board Members</a>
+                        <a class="dropdown-item" href="/Members/Instructor.html">Instructor</a>
+                        <a class="dropdown-item" href="/Members/QUPBMembers.html">QUPB Members</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Shop/Shop.html">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/QueensBand/Queens.html">Queens</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mx-2">
+                <li class="nav-item dropdown">
+                    <a class="nav-link large-nav-text" href="/Courses/SingupPage.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+<section>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container-fluid" style="background-image: url('/img/ComingSoon_Backdrop3.jpg'); background-size: cover; padding-bottom: 53%; margin-top: 10px;">
+          <div class="container" style="position: absolute; bottom: 50%; left: 50%; transform: translate(-50%, 50%); z-index: 2;">
+              <h1>Coming Soon</h1>
+              <div class="timer">
+                <span id="days"></span>
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+              </div>
+              <form>
+                <label for="email">Be the first to know:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+               </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22871.398632347253!2d-76.49426900000002!3d44.229206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd1e493a7fc07ef1!2sQueen&#39;s%20Athletics%20%26%20Recreation%20Centre%20(ARC)!5e0!3m2!1sen!2sca!4v1676143544552!5m2!1sen!2sca"
+  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>Queen's Athletics & Recreation Centre (ARC)<br>
+                284 Earl St, Kingston, ON K7L 3N6</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>(613) 533-2500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>queensupipeband@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="/index.html"><img src="/img/logo.jpg" class="img-fluid" alt="logo"></a>
+            </div>
+            <div class="footer-text">
+              <p>We are exited to be here for your scottish journey of learning about its history and taking up its
+                traditional instruments.</p>
+            </div>
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="https://www.instagram.com/queensupipeband/"> <i class="fab fa-instagram instagram-bg"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100089124356288"><i
+                  class="fab fa-facebook-f facebook-bg"></i></a>
+              <a href="https://twitter.com/QueensUPipeBand"><i class="fab fa-twitter twitter-bg"></i></a>
+              <a href="https://www.youtube.com/channel/UCJtpFiTcjzArntWTFaglrNg"><i
+                  class="fab fa-youtube google-bg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/Events/AllEvents.html">Events</a></li>
+              <li><a href="/Courses/SingupPage.html">Sign Up</a></li>
+              <li><a href="/Members/Staff.html">Team</a></li>
+              <li><a href="/History/OurMission.html">Our Mission</a></li>
+              <li><a href="/Shop/Shop.html">Shop</a></li>
+              <li><a href="/History/History.html">History</a></li>
+              <li><a href="/Socials/Fundraisers.html">Fundrasing</a></li>
+              <li><a href="/Socials/FAQs.html">FAQs</a></li>
+              <li><a href="/Socials/News.html">Latest News</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Subscribe</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="text" placeholder="Email Address">
+                <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/"></a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
