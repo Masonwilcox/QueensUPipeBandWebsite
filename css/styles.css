@@ -168,7 +168,7 @@ body {
 
 
 /* Hide the navigation menu when the screen size is smaller */
-@media screen and (max-width:768px) {
+@media screen and (max-width:980px) {
   .navbar-menu {
     display: none;
   }
@@ -179,7 +179,7 @@ body {
 }
 
 /* Show the navigation menu when the screen size is larger */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 1281px) {
   .navbar-menu {
     display: block;
   }
@@ -254,7 +254,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   .Sinuprow {
     flex-direction: column;
   }
